@@ -6,12 +6,14 @@ from chip.ChipStack import *
 from fastapi_websocket_rpc import RpcMethodsBase
 from pydantic import BaseModel
 
+#from chip.clusters import ClusterObjects
+from matter_server import MyClusterObjects
+from matter_server.MyObjects import *
+
 logger = getLogger(__name__)
 logger.setLevel(DEBUG)
 
 
-class OnOff(BaseModel):
-     onOff: bool = True
 
 class MatterServer(RpcMethodsBase):
     """Main MatterServer implementation."""

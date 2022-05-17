@@ -2,6 +2,9 @@ import asyncio
 
 from fastapi_websocket_rpc import RpcMethodsBase, WebSocketRpcClient
 
+from matter_server import MyClusterObjects
+from matter_server.MyObjects import *
+
 
 class MatterClient(RpcMethodsBase):
 
